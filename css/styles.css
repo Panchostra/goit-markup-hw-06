@@ -1,9 +1,6 @@
 .container {
- max-width: 320px;
-  padding-left: 16px;  
-  padding-right: 16px; 
-  margin-left: auto; 
-  margin-right: auto;
+  width: 1440px;
+  margin: 0 auto;
 }
 .button {
   font-weight: 500;
@@ -132,12 +129,11 @@ ul {
 }
 .page-footer {
   display:flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: row;
   background-color: #2e2f42;
   padding: 100px 0;
-  gap:72px;
+  padding-left: 156px;
+  gap:120px;
 
 }
 .footer-text {
@@ -177,7 +173,9 @@ ul {
 .footer-logo {
   height: 24px;
 }
-
+.whole-page {
+  width: 1158px;
+}
 .page-header {
   padding: 24px 0;
 }
@@ -225,8 +223,8 @@ ul {
 }
 .item-list {
   display: flex;
-  flex-direction: column;
-  gap: 72px;
+  flex-direction: row;
+  gap: 24px;
 }
 .item-box {
   display: flex;
@@ -249,8 +247,8 @@ ul {
 
 .card-list {
   display: flex;
-  flex-direction: column;
-  gap: 72px;
+  flex-direction: row;
+  gap: 24px;
   justify-content: center;
   align-items: center;
 }
@@ -489,10 +487,10 @@ border:none;
 }
 .subscribe-inner-form {
   display:flex;
-  flex-direction: column;
-  gap:16px;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  gap:24px;
+  align-items: flex-end;
+  justify-content: center;;
 }
 
 .order-form {
@@ -736,59 +734,3 @@ transition:
   opacity: 1;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1440px) { 
-  .container {
-    max-width: 1440px;
-    padding-left:15px;
-    padding-right:15px;
-  }
-  .card-list {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  justify-content: center;
-  align-items: center;
-}
- .item-list {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-} 
-.page-footer {
-  display:flex;
-  flex-direction: row;
-  background-color: #2e2f42;
-  padding: 100px 0;
-  padding-left: 156px;
-  gap:120px;
-
-}
-.subscribe-inner-form {
-  display:flex;
-  flex-direction: row;
-  gap:24px;
-  align-items: flex-end;
-  justify-content: center;;
-}
-
-}
-@media (min-resolution: 2x) {
-  .slogan.section {
-     background-image: linear-gradient(
-  rgba(46, 47, 66, 0.7),
-  rgba(46, 47, 66, 0.7)
-), url(../images/people-office@2x.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: relative; }
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
