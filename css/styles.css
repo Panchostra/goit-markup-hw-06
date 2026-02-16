@@ -750,21 +750,83 @@ transition:
   opacity: 1;
 }
 .mobile-menu-container {
+  position:relative;
   display:flex;
   flex-direction: column;
-  gap:168px;
+  
 }
 .mobile-menu-address {
   display: flex;
   flex-direction: column;
   gap:24px;
+  margin-bottom:48px;
 }
 .mobile-page-nav-list {
    display: flex;
     flex-direction: column;
-    gap: 40px;  
-}
+    gap: 40px;
+    margin-bottom:168px;
 
+}
+.mobile-link {
+  font-weight: 700;
+font-size: 36px;
+line-height: 111%;
+letter-spacing: 0.02em;
+color: #2e2f42;
+}
+.mobile-link.current {
+  color:#404bbf;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding:0px;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms ease;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;}
+  .mobile-menu-address .tel-link {
+font-weight: 500;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0.02em;
+color: #4d5ae5;
+  }
+   .mobile-menu-address .mail-link {
+font-weight: 500;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0.02em;
+color: #434455;
+  }
+  .menu.team.icons {
+    display:flex;
+    flex-direction: row;
+    gap:40px;
+    margin:0px;
+  }
+  .mobile-menu-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    padding-left:16px;
+    padding-top:72px;
+    padding-bottom:40px;
+ 
+  }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px; }
