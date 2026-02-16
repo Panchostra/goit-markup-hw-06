@@ -1,7 +1,6 @@
 .container {
  max-width: 320px;
-  padding-left: 16px;
-  padding-right: 16px;
+padding:0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -179,19 +178,20 @@ ul {
   width: 1158px;
 }
 .page-header {
-  padding: 24px 0;
+  padding: 0;
+  width:320px;
 }
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 156px;
-  padding-right: 156px;
+  justify-content: flex-start;
+  height:56px;
+ margin:auto 0;
+ margin-left:16px;
 }
 .page-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
+  
+  display:none;
 }
 .header-left {
   display: flex;
@@ -237,20 +237,23 @@ letter-spacing: 0.02em;
 .item-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 264px;
   gap: 8px;
 }
 .item-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.02em;
 }
 .item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
+font-weight: 700;
+font-size: 36px;
+line-height: 111%;
+letter-spacing: 0.02em;
+text-align: center;
 }
 
 .card-list {
@@ -329,15 +332,8 @@ letter-spacing: 0.02em;
   height: 64px;
 }
 .item.section .icon-box {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F4F4FD;
-  height:112px;
-  width: 264px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
- 
+  display:none;
+
 }
 .team.icons {
   display: flex;
@@ -820,5 +816,55 @@ color: #f4f4fd;
    letter-spacing: 0.02em;
   color: white;
   text-align: center;
+}
+.page-header {
+  padding: 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 156px;
+  padding-right: 156px;
+}
+.page-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.address {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  font-style: normal;
+}
+.item.section .icon-box {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F4FD;
+  height:112px;
+  width: 264px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+ 
+}
+.item-box {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  gap: 8px;
+}
+.item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+.item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
 }
 }
