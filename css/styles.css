@@ -830,7 +830,32 @@ color: #434455;
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px; }
+
+ .item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+  flex-direction: row;
+  padding: 96px 16px;
   
+} 
+.item-box {
+flex-basis: calc((100% - 24px) / 2);
+display:flex;
+justify-content: center;
+align-items: flex-start;
+}
+.card-list {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 64px 24px;
+}
+.card-item {
+  flex-basis: calc((100% - 24px) / 2);
+  
+  height: 428px;
+}
 }
 
 @media screen and (min-width: 1158px) {
