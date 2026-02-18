@@ -827,6 +827,23 @@ color: #434455;
     padding-bottom:40px;
  
   }
+.menu-icon-box {
+   display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  height:24px;
+  width: 24px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  color: blue;
+  
+  margin-left:149px;
+}
+.menu-icon-box .icon {
+  fill: black
+}
+  
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px; }
@@ -856,6 +873,8 @@ align-items: flex-start;
   
   height: 428px;
 }
+.menu-icon-box {
+  display:none; }
 }
 
 @media screen and (min-width: 1158px) {
@@ -868,6 +887,7 @@ align-items: flex-start;
   display: flex;
   flex-direction: row;
   gap: 24px;
+  flex-wrap:nowrap;
 }
 .card-list {
   display: flex;
@@ -875,6 +895,10 @@ align-items: flex-start;
   gap: 24px;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+}
+.card-item {
+  flex-basis:initial
 }
 .portfolio-item {
   width: 360px;
@@ -976,4 +1000,6 @@ color: #f4f4fd;
   line-height: 150%;
   letter-spacing: 0.02em;
 }
+.menu-icon-box {
+  display:none; }
 }
