@@ -390,7 +390,7 @@
             </li>
           </ul>
         </section>
-        <div class="backdrop" data-modal>
+        <div class="backdrop is-open" data-modal>
           <div class="modal">
           <form class="order-form ">
             <button  type="button" class="close-button" aria-label="Close form">
@@ -425,11 +425,13 @@
            <label class="checkbox label">
             <input class="modal-checkbox" type="checkbox" name="privacy" value="privacy" required/>
               <span class="custom-checkbox">
-                  <svg class="icon-tick "width="10" height="8">
+                  <svg class="icon-tick "width="16" height="16">
     <use href="./images/icons/symbol-defs.svg#icon-tick"></use>
   </svg>
               </span>
-            I accept the terms and conditions of the <a href="">Privacy Policy</a>  
+              <div class=terms-text-box>
+            I accept the terms and conditions of the <a href="">Privacy Policy</a>
+            </div>  
             </label>
             <button class="form-button" type="submit">Send</button>
           </form>
