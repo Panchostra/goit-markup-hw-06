@@ -188,6 +188,7 @@ ul {
   justify-content: flex-start;
   height:56px;
  margin:auto 0;
+  width: 100%;
 }
 .page-nav {
   
@@ -831,14 +832,14 @@ color: #434455;
    display:flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: white;
   height:24px;
   width: 24px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  color: blue;
+  justify-self: flex-end;
   
-  margin-left:149px;
+ 
 }
 .menu-icon-box .icon {
   fill: black
@@ -910,6 +911,8 @@ align-items: flex-start;
   padding: 100px 0;
   padding-left: 156px;
   gap:120px;
+  justify-content: center;
+  align-items: flex-start;
 
 }
 .subscribe-inner-form {
@@ -928,6 +931,8 @@ align-items: flex-start;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: white;
+  align-items: flex-start;
+  
 }
 .footer-socials {
   font-weight: 500;
@@ -935,11 +940,15 @@ font-size: 16px;
 line-height: 150%;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+display:flex;
+gap:16px;
+align-items: flex-start;
 }
+
 .footer-box {
   width: 264px;
   height: 112px;
-
+display: block;
 }
 .page-title {
    width: 496px;
@@ -959,6 +968,7 @@ color: #f4f4fd;
   justify-content: space-between;
   padding-left: 156px;
   padding-right: 156px;
+  width:initial
 }
 .page-nav {
   display: flex;
