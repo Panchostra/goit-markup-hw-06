@@ -854,9 +854,10 @@ align-items: flex-start;
   gap: 64px 24px;
 }
 .card-item {
-  flex-basis: calc((100% - 24px) / 2);
+  
   
   height: 428px;
+  width: 264px;
 }
 .menu-icon-box {
   display:none; 
@@ -976,6 +977,18 @@ letter-spacing: 0.04em;
   flex-direction: row;
   gap: 120px;
 
+}
+.page-title {
+  font-weight: 700;
+font-size: 56px;
+line-height: 107%;
+letter-spacing: 0.02em;
+text-align: center;
+  
+}
+.section {
+  padding:96px 0px;
+  margin: 0;
 }
 }
 @media screen and (min-width: 1158px) {
@@ -1172,5 +1185,9 @@ letter-spacing: 0.02em;
   flex-direction: row;
   gap: 76px;
   margin:0px;
+}
+.section {
+  padding: 120px 0;
+  margin: 0;
 }
 }
