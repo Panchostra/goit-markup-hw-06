@@ -187,7 +187,7 @@ ul {
   justify-content: space-between;
   height:56px;
  margin:auto 0;
-  width: 100%;
+
 }
 .page-nav {
   
@@ -822,6 +822,7 @@ color: #434455;
   background-color: white;
   height:24px;
   width: 24px;
+  margin-right: 32px;
   
  
 }
