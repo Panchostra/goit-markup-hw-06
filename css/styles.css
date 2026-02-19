@@ -34,6 +34,12 @@
 .link:focus {
   color: #404bbf;
 }
+.header.mail-link:hover,
+.header.mail-link:focus 
+.header.tel-link:hover, 
+.header.tel-link:focus {
+   color: #404bbf;
+}
 .card-name:hover,
 .card-name:focus {
   color: #404bbf;
